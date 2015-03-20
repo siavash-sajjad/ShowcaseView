@@ -247,6 +247,12 @@ public class ShowcaseView extends RelativeLayout
             mEndButton.setText(text);
         }
     }
+    
+        public void setButtonText(int color) {
+        if (mEndButton != null) {
+            mEndButton.setBackgroundColor(color);
+        }
+    
 
     private void recalculateText() {
         boolean recalculatedCling = showcaseAreaCalculator.calculateShowcaseRect(showcaseX, showcaseY, showcaseDrawer);
